@@ -7,4 +7,6 @@
         font-size: $h;
     }
 }
-
+p {
+    @include font-size($p-font-sizes);
+}
