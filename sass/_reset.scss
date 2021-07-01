@@ -8,4 +8,5 @@
 html,body{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    @include prefix(transition,all 0.5s ease);
 }
