@@ -3,3 +3,19 @@
       #{$prefix}#{$property}: $parameters;
     }
 }
+@mixin w-h($w,$h){
+  width: $w;
+  height: $h;
+}
+@mixin p-l($p){
+  padding-left: $p;
+}
+@mixin p-r($p){
+  padding-left: $p;
+}
+@mixin p-t($p){
+  padding-left: $p;
+}
+@mixin p-b($p){
+  padding-left: $p;
+}
