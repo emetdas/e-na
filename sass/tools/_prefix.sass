@@ -1,0 +1,80 @@
+// Prefix mixins
+// =============
+//
+// A set of SASS mixins for abstracting vendor prefixes.
+@mixin background-size($parameters)
+  -webkit-background-size : $parameters
+  -moz-background-size    : $parameters
+  -o-background-size      : $parameters
+  background-size         : $parameters
+
+@mixin prefix-background-clip($parameters)
+  -webkit-background-clip : $parameters
+  -moz-background-clip    : $parameters
+  -ms-background-clip     : $parameters
+  background-clip         : $parameters
+
+@mixin prefix-transition($parameters...)
+  -webkit-transition : $parameters
+  -moz-transition    : $parameters
+  -ms-transition     : $parameters
+  transition         : $parameters
+
+@mixin prefix-perspective($parameters)
+  -webkit-perspective : $parameters
+  -moz-perspective    : $parameters
+  -ms-perspective     : $parameters
+  perspective         : $parameters
+
+@mixin prefix-transition-delay($parameters)
+  -webkit-transition-delay : $parameters
+  -moz-transition-delay    : $parameters
+  -ms-transition-delay     : $parameters
+  transition-delay         : $parameters
+
+@mixin prefix-transform($parameters)
+  -webkit-transform : $parameters
+  -moz-transform    : $parameters
+  -ms-transform     : $parameters
+  transform         : $parameters
+
+@mixin prefix-transform-origin($parameters)
+  -webkit-transform-origin : $parameters
+  -moz-transform-origin    : $parameters
+  -ms-transform-origin     : $parameters
+  transform-origin         : $parameters
+
+@mixin prefix-animation($parameters)
+  -webkit-animation : $parameters
+  -moz-animation    : $parameters
+  -ms-animation     : $parameters
+  animation         : $parameters
+
+@mixin prefix-animation-delay($parameters)
+  -webkit-animation-delay : $parameters
+  -moz-animation-delay    : $parameters
+  -ms-animation-delay     : $parameters
+  animation-delay         : $parameters
+
+@mixin prefix-animation-fill-mode($parameters)
+  -webkit-animation-fill-mode : $parameters
+  -moz-animation-fill-mode    : $parameters
+  -ms-animation-fill-mode     : $parameters
+  animation-fill-mode         : $parameters
+
+@mixin prefix-animation-play-state($parameters)
+  -webkit-animation-play-state : $parameters
+  -moz-animation-play-state    : $parameters
+  -ms-animation-play-state     : $parameters
+  animation-play-state         : $parameters
+
+@mixin prefix-user-select($parameters)
+  -webkit-user-select : $parameters
+  -moz-user-select    : $parameters
+  user-select         : $parameters
+
+@mixin prefix-filter($parameters)
+  -webkit-filter : $parameters
+  -moz-filter    : $parameters
+  -ms-filter     : $parameters
+  filter         : $parameters
