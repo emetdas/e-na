@@ -1,3 +1,23 @@
+$p-font-sizes: (
+  null  : 1.5rem,
+  480px : 1.6rem,
+  640px : 1.7rem,
+  1024px: 1.9rem
+);
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
 @mixin prefix($property, $parameters...) {
     @each $prefix in -webkit-, -moz-, -ms-, -o-, "" {
       #{$prefix}#{$property}: $parameters;

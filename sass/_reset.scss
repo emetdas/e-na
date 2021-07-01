@@ -10,3 +10,6 @@ html,body{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+p {
+@include font-size($p-font-sizes);
+}
