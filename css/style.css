@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Oxygen:wght@400;700&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 *,
 *::after,
 *::before {
@@ -7,4 +8,18 @@
 
 html, body {
   box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem; }
+
+.btn-b {
+  display: block; }
+
+.btn-primary {
+  background: #5553ff; }
+
+.btn-secondry {
+  background: #8887ff; }
