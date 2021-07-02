@@ -1,22 +1,22 @@
 @mixin prefix($property, $parameters...) {
-    @each $prefix in -webkit-, -moz-, -ms-, -o-, "" {
-      #{$prefix}#{$property}: $parameters;
-    }
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+    #{$prefix}#{$property}: $parameters;
+  }
 }
-@mixin w-h($w,$h){
+@mixin w-h($w, $h) {
   width: $w;
   height: $h;
 }
-@mixin p-l($p){
+@mixin p-l($p) {
   padding-left: $p;
 }
-@mixin p-r($p){
+@mixin p-r($p) {
   padding-left: $p;
 }
-@mixin p-t($p){
+@mixin p-t($p) {
   padding-left: $p;
 }
-@mixin p-b($p){
+@mixin p-b($p) {
   padding-left: $p;
 }
 // populer-device
@@ -27,46 +27,35 @@
 // 1536×864 (3.88%)
 // 375×667 (3.75%)
 // populer-device
-$devices : (
-  mobile:320px,
-  md-mobile:360px,
-  bi-mobile:640px,
-  tablate:768px,
-  desktop:1080px,
-  bi-desktop:1440px,
+$devices: (
+  mobile: 320px,
+  md-mobile: 360px,
+  bi-mobile: 640px,
+  tablate: 768px,
+  desktop: 1080px,
+  bi-desktop: 1440px,
 );
-@mixin media($device,$max-min) {
-  @media ($max-min:$device){
-    @content;
-  }
-}
 
-@mixin for-size($size) {
-  @if $size == phone-only {
-    @media (max-width: 599px) { @content; }
-  } @else if $size == tablet-portrait-up {
-    @media (min-width: 600px) { @content; }
-  } @else if $size == tablet-landscape-up {
-    @media (min-width: 900px) { @content; }
-  } @else if $size == desktop-up {
-    @media (min-width: 1200px) { @content; }
-  } @else if $size == big-desktop-up {
-    @media (min-width: 1800px) { @content; }
+@mixin media-size($size) {
+  @if $size == phone {
+    @media (max-width: 599px) {
+      @content;
+    }
+  } @else if $size == tablet-portrait {
+    @media (min-width: 600px) {
+      @content;
+    }
+  } @else if $size == tablet-landscape {
+    @media (min-width: 900px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == big-desktop {
+    @media (min-width: 1800px) {
+      @content;
+    }
   }
-}
-
-@mixin for-phone-only {
-  @media (max-width: 599px) { @content; }
-}
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) { @content; }
-}
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) { @content; }
-}
-@mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
-}
-@mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
 }
