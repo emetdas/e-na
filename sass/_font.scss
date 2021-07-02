@@ -2,11 +2,30 @@
 // font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 //https://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps/
 // dynamic-font calculiton 
-@for $h from 1 to 6 {
+@for $h from 0 to 6 {
     h#{$h}{
-        font-size: $h;
+        font-size: #{$h}rem; 
     }
 }
+$p-font-sizes: (
+  null  : 1.5rem,
+  480px : 1.6rem,
+  640px : 1.7rem,
+  1024px: 1.9rem
+);
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+} 
 p {
     @include font-size($p-font-sizes);
 }
