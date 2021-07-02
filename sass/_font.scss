@@ -1,6 +1,7 @@
 // dynamic-font calculiton
 // font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 //https://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps/
+//https://www.sitepoint.com/build-responsive-type-scale-bootstrap/
 // dynamic-font calculiton 
 @for $h from 0 to 6 {
     h#{$h}{
