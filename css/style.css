@@ -41,6 +41,45 @@ p {
     p {
       font-size: 1.9rem; } }
 
+.d-flex {
+  display: flex; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.flex-d-c {
+  flex-direction: column; }
+
+.flex-d-cr {
+  flex-direction: column-reverse; }
+
+.flex-d-r {
+  flex-direction: row; }
+
+.flex-d-rr {
+  flex-direction: row-reverse; }
+
+.d-afl {
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr)); }
+
+.d-aft {
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
+
+.align-item-center {
+  align-items: center; }
+
+.align-item-l {
+  align-items: flex-start; }
+
+.align-item-r {
+  align-items: flex-end; }
+
+.js-c {
+  justify-content: center; }
+
+.js-l {
+  justify-content: left; }
+
 .btn {
   display: inline-block;
   padding: 0.6rem 1.4rem; }
