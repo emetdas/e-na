@@ -14,6 +14,5 @@ color.forEach((one,two)=>{
     console.log(card);
     card.innerText = `${one}`; 
     card.style.background =`linear-gradient(${one})`;
-   container.appendChild(card);
-    console.log(`linear-gradient(${one},${two})`);
+    container.appendChild(card);
 })
