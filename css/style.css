@@ -95,3 +95,10 @@ p {
 
 .btn-secondry {
   background: #8887ff; }
+
+.card {
+  width: 300px;
+  height: 250px;
+  float: left;
+  background-size: cover;
+  background-position: center; }
