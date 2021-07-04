@@ -11,13 +11,25 @@
   padding-left: $p;
 }
 @mixin p-r($p) {
-  padding-left: $p;
+  padding-right: $p;
 }
 @mixin p-t($p) {
-  padding-left: $p;
+  padding-top: $p;
 }
 @mixin p-b($p) {
-  padding-left: $p;
+  padding-bottom: $p;
+}
+@mixin m-l($m) {
+  margin-left: $m;
+}
+@mixin m-r($m) {
+  margin-right: $m;
+}
+@mixin m-t($m) {
+  margin-top: $m;
+}
+@mixin m-b($m) {
+  margin-bottom: $m;
 }
 @mixin sudo-tl($t,$l) {
   position: absolute;
