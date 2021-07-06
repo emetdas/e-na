@@ -1,2 +1,9 @@
 // @media (max-width:map-get($devices, mobile) - 1) 
-
+$devices: (
+  mobile: 320px,
+  md-mobile: 360px,
+  bi-mobile: 640px,
+  tablate: 768px,
+  desktop: 1080px,
+  bi-desktop: 1440px,
+);

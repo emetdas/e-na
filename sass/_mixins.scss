@@ -63,14 +63,7 @@
 // 1536×864 (3.88%)
 // 375×667 (3.75%)
 // populer-device
-$devices: (
-  mobile: 320px,
-  md-mobile: 360px,
-  bi-mobile: 640px,
-  tablate: 768px,
-  desktop: 1080px,
-  bi-desktop: 1440px,
-);
+
 @mixin media-size($device) {
   @if $device == phone {
     @media (max-width: 370px) {
