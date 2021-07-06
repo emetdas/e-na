@@ -71,7 +71,6 @@ $devices: (
   desktop: 1080px,
   bi-desktop: 1440px,
 );
-
 @mixin media-size($device) {
   @if $device == phone {
     @media (max-width: 370px) {
