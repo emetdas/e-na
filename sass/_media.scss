@@ -1,4 +1,4 @@
-// @media (max-width:map-get($devices, mobile) - 1) 
+// @media (max-width:map-get($devices, mobile) - 1)
 $devices: (
   mobile: 320px,
   md-mobile: 360px,
@@ -7,13 +7,14 @@ $devices: (
   desktop: 1080px,
   bi-desktop: 1440px,
 );
-@mixin  media-quries($device,$value){
-    @if ($value == 'max') {
-        @media (max-width:$device){
-            @content
-        }
+@mixin media-quries($device, $value) {
+  @if ($value == 'max') {
+    @media (max-width: $device) {
+      @content;
     }
-    @else{
-
+  } @else {
+    @media (min-width: $device) {
+      @content;
     }
+  }
 }
