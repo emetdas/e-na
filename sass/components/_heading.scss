@@ -1,5 +1,6 @@
 @each $tyfo, $value in $heading {
   #{$tyfo}{
       font-size: $value; 
+      background: red; 
   }
 }
