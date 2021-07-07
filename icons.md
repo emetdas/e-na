@@ -1,0 +1,8 @@
+[Bytesize](https://link)
+[Google Material icons](https://link)
+[Ionicons](https://link)
+[Dripicons](https://link)
+[Ikons](https://link)
+[Icons8](https://link)
+[icofont](https://link)
+[CoreUI Icons](https://link)
