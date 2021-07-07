@@ -1,4 +1,3 @@
-@import './components/heading';
 *,
 *::after,
 *::before{
@@ -11,3 +10,4 @@ html,body{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+@import './components/heading';
