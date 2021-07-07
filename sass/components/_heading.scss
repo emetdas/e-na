@@ -1,2 +1,4 @@
 @each $tyfo, $value in $heading {
+    #{$tyfo}:$value;
 }
+
